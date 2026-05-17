@@ -1,8 +1,8 @@
-# bkxtpdcdx
+# Thesis Topic Checker
 
 本科毕业论文选题可行性判断 Skill。
 
-`bkxtpdcdx` 用于判断一个本科毕业论文选题是否可行，并给出修改路径。它不只回答“能不能做”，而是把题目放到“母题、候选题、可开题题目”三个层级里判断，再从数据、变量、文献、同质化、实证难度等维度给出具体修改建议。
+`thesis-topic-checker` 用于判断一个本科毕业论文选题是否可行，并给出修改路径。它不只回答“能不能做”，而是把题目放到“母题、候选题、可开题题目”三个层级里判断，再从数据、变量、文献、同质化、实证难度等维度给出具体修改建议。
 
 ## 适合场景
 
@@ -35,18 +35,18 @@ Skill 会从 9 个维度诊断选题：
 
 ## 安装
 
-下载本仓库后，将 `bkxtpdcdx` 文件夹复制到你的 Skills 目录。
+下载本仓库后，将 `thesis-topic-checker` 文件夹复制到你的 Skills 目录。
 
 Windows 示例：
 
 ```text
-C:\Users\你的用户名\.agents\skills\bkxtpdcdx
+C:\Users\你的用户名\.agents\skills\thesis-topic-checker
 ```
 
 macOS / Linux 示例：
 
 ```text
-~/.agents/skills/bkxtpdcdx
+~/.agents/skills/thesis-topic-checker
 ```
 
 复制后，重新打开 Codex 或新建对话，即可调用。
@@ -56,17 +56,17 @@ macOS / Linux 示例：
 在对话中输入：
 
 ```text
-$bkxtpdcdx 企业数字化转型对绿色创新
+$thesis-topic-checker 企业数字化转型对绿色创新
 ```
 
 也可以这样使用：
 
 ```text
-$bkxtpdcdx ESG 对汽车行业出口绩效
+$thesis-topic-checker ESG 对汽车行业出口绩效
 ```
 
 ```text
-$bkxtpdcdx 宜宾茶旅融合政策对农村居民收入
+$thesis-topic-checker 宜宾茶旅融合政策对农村居民收入
 ```
 
 ## 输出内容
@@ -84,7 +84,7 @@ $bkxtpdcdx 宜宾茶旅融合政策对农村居民收入
 ## 项目结构
 
 ```text
-bkxtpdcdx/
+thesis-topic-checker/
 ├─ SKILL.md
 └─ agents/
    └─ openai.yaml

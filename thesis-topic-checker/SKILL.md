@@ -1,5 +1,5 @@
 ---
-name: bkxtpdcdx
+name: thesis-topic-checker
 description: Diagnose undergraduate thesis topic feasibility and revision paths. Use when users ask whether a bachelor's thesis topic, undergraduate dissertation idea, empirical paper topic, or research direction is feasible, too broad, too common, data-accessible, literature-supported, empirically doable, or how to revise it into a workable thesis.
 ---
 
