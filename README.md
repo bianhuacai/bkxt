@@ -69,10 +69,6 @@ $thesis-topic-checker 企业数字化转型对绿色创新
 $thesis-topic-checker ESG 对汽车行业出口绩效
 ```
 
-```text
-$thesis-topic-checker 宜宾茶旅融合政策对农村居民收入
-```
-
 ## 输出内容
 
 典型输出包括：
