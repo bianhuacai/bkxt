@@ -25,6 +25,7 @@ Useful inputs:
 
 - Topic or research direction
 - Major or discipline
+- School type or local requirement, only when the user mentions it
 - Planned method: empirical, case study, questionnaire, literature review, theoretical analysis
 - Target sample: region, industry, firm type, population, time period
 - Possible data source
@@ -50,10 +51,20 @@ Score each dimension from 0 to 5:
 - **数据可得性**: whether the needed data are public, credible, large enough, time-bounded, and manageable for an undergraduate student.
 - **变量可测量性**: whether every core concept can be converted into accepted indicators, proxies, questionnaire scales, or observable evidence.
 - **文献基础**: whether there are enough relevant papers to support literature review, theory, hypotheses, variable design, and empirical model choices.
-- **同质化风险**: whether the topic is heavily repeated and whether it has a credible small angle to avoid pure duplication. High saturation is a risk, not an automatic rejection.
-- **实证难易程度**: whether the method fits undergraduate ability and available time. OLS, descriptive analysis, fixed effects, mediation, moderation, and heterogeneity are usually more suitable than DID, IV, RDD, or complex causal designs unless the design is very clear.
+- **同质化风险**: whether the topic is heavily repeated and whether it has a credible small angle to avoid pure duplication. For undergraduate theses, do not score this dimension harshly. Repeated topics are usually acceptable if the student can specify data, variables, sample, and a modest angle. Add a note that innovation expectations vary by school; 985/211, double-first-class, honors programs, or stricter departments may require a clearer contribution.
+- **实证难易程度**: whether the method fits undergraduate ability and available time. OLS, descriptive analysis, fixed effects, two-way fixed effects, mediation, moderation, and heterogeneity are generally acceptable for undergraduate empirical theses when the data are clean and the model is explainable. Treat DID, IV, RDD/RD, PSM, synthetic control, and other stronger causal designs as warning-level methods unless the policy shock, identification logic, and data structure are very clear.
 - **论文结构可写性**: whether the topic can naturally produce a complete paper structure: problem, theory, hypotheses, data, variables, model, results, robustness, discussion, and conclusion.
 - **修改弹性**: whether the topic can be rescued by narrowing scope, changing data, changing variables, softening causal claims, switching method, or moving to an adjacent mature topic.
+
+## Empirical Difficulty Calibration
+
+Use this calibration when scoring 实证难易程度:
+
+- **5/5**: descriptive statistics, correlation analysis, OLS, industry/year controls, firm fixed effects, year fixed effects, or two-way fixed effects, with accessible panel data and clear variables.
+- **4/5**: mediation, moderation, heterogeneity analysis, robustness checks, lagged variables, or alternative variable definitions, if the logic is simple.
+- **3/5**: panel models with messy data, many missing values, unclear variable construction, or a method the user has not used before but can learn.
+- **2/5**: DID, PSM-DID, IV, RDD/RD, synthetic control, spatial econometrics, machine learning, or multi-stage causal designs without a very clear identification setup.
+- **1/5**: methods that require hard-to-get microdata, unverifiable assumptions, complex causal identification, or advanced econometrics beyond the student's likely time and training.
 
 ## Feasibility Levels
 
@@ -105,7 +116,9 @@ Keep the final answer practical. For undergraduate users, concrete revision path
 - Do not equate "broad" with "bad." Broad topics are often viable mother themes.
 - Do not equate "many people studied it" with "cannot write." For undergraduate theses, repeated topics are often safer if a small angle exists.
 - Do not demand excessive originality. A modest change in sample, time period, mechanism, variable, or context can be enough.
-- Do not over-recommend complex causal methods. Prefer methods the user can realistically execute.
+- Do not over-penalize homogeneity. For undergraduate theses, 同质化风险 should mainly trigger revision suggestions, not rejection.
+- Add a short school-requirement note when relevant: ordinary undergraduate programs usually tolerate mature topics with modest angles, while 985/211, double-first-class, honors programs, or stricter departments may expect clearer innovation.
+- Do not over-recommend complex causal methods. Prefer methods the user can realistically execute. Treat two-way fixed effects as acceptable and often undergraduate-friendly when panel data are available. Warn clearly before recommending DID, IV, RDD/RD, PSM-DID, synthetic control, or other advanced causal designs.
 - Separate direction feasibility from current-title maturity.
 - When data are uncertain, name possible data paths and say which one makes the topic easier.
 - When a topic is risky, provide a lower-risk adjacent version instead of only rejecting it.
